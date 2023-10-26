@@ -1,0 +1,17 @@
+   const ids = [1, 2, 3];
+    const names = ["John", "Jane", "Alice"];
+    const images = ["john.jpg", "jane.jpg", "alice.jpg"];
+
+// Map function :--------------------------------------------  //
+    function createUserObjects(ids,names,images){
+        //Implement your function here
+        
+        const output = ids.map((id,index)=> ({
+            id,
+            name: names[index],
+            image: images[index],
+        }));
+       return output;   
+    }
+      const out = createUserObjects(ids,names,images);
+      console.log(out);
